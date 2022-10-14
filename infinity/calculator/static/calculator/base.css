@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'fluxregularregular';
+  src: url('fluxrg__-webfont.woff2') format('woff2'),
+       url('fluxrg__-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+ul {
+    font-family: 'fluxregularregular';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #CE0F3D;
+  }
+  
+  li {
+    font-family: 'fluxregularregular';
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #B0B7BC;
+  }

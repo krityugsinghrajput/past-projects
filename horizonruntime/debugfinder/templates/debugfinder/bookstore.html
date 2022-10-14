@@ -1,0 +1,71 @@
+{% extends 'debugfinder/layout_bookstore.html' %}
+{% load static %}
+
+{% block header %}
+<title>Bookstore-Home</title>
+<link rel="stylesheet" type="text/css" href="{% static 'debugfinder/bookstore_style.css' %}">
+{% endblock %}
+
+
+{% block bookstore_body %}
+<div class="header">
+    <h2>View current most popular books about debugfinder framework</h2>
+</div>
+
+{% for bookname in bookstore %}
+
+
+
+<div class="">
+    <ul>
+    <li>The book <strong>{{bookname.bookname}}</strong> was written in the year <strong> {{bookname.yearwritten}}  </strong>by 
+        <strong>{{bookname.author}}</strong> and was published in the year <strong> {{bookname.published}}</strong> with the description of <strong> {{bookname.information}}</strong>
+    </li>
+</ul>
+</div>
+
+<!--
+<table>
+  <tr>
+    <th>Bookname</th>
+    <th>Created By</th>
+    <th>Author</th>
+    <th>Published</th>
+  </tr>
+  <tr>
+    <td>{{bookname.bookname}}</td>
+    <td>{{bookname.createdby}}</td>
+    <td>{{bookname.author}}</td>
+    <td>{{bookname.published}}</td>
+  </tr>
+  <tr>
+    <td>{{bookname.bookname}}</td>
+    <td>{{bookname.createdby}}</td>
+    <td>{{bookname.author}}</td>
+    <td>{{bookname.published}}</td>
+  </tr>
+  <tr>
+    <td>{{bookname.bookname}}</td>
+    <td>{{bookname.createdby}}</td>
+    <td>{{bookname.author}}</td>
+    <td>{{bookname.published}}</td>
+  </tr>
+  <tr>
+    <td>{{bookname.bookname}}</td>
+    <td>{{bookname.createdby}}</td>
+    <td>{{bookname.author}}</td>
+    <td>{{bookname.published}}</td>
+  </tr>
+  <tr>
+    <td>{{bookname.bookname}}</td>
+    <td>{{bookname.createdby}}</td>
+    <td>{{bookname.author}}</td>
+    <td>{{bookname.published}}</td>
+  </tr>
+</table>
+-->
+
+
+
+{% endfor %}
+{% endblock %}

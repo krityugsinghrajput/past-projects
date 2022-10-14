@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'calculator/board.css' %}"/>
+</head>
+{% endblock %}
+
+{% block content %}
+<body>
+    <h1 id="title_heading">Infinity Blank Board</h1>
+    <hr>
+    <p id="title_paragraph">Blank boards are temparary spaces to teach or practice math problems for free</p>
+    <hr>
+    <button class="button button1">Learn more</button>
+
+    <div id="container_home">
+       <h1 id="feature1">Visualitation and Project Manager</h1>
+    </div>
+    
+</body>
+{% endblock %}
+
+</html>

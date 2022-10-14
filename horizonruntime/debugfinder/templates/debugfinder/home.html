@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block active_page1 %} active area-current="page" {% endblock %}
+{% block title %} Home | DebugFinder {% endblock %}
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'debugfinder/home.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+{% block head %}
+{% endblock head %}
+
+
+{% block content %}
+
+<body>
+
+    <!-- Service Status Page -->
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        To view any interuptions in our service please visit <a href="{% url 'ss' %}" class="alert-link">services status page</a>.
+         to stay up-to-date with our services status..
+      </div>
+    <!-- Service Status Page -->
+
+
+    <div class="welcome_section">
+        <h1>Welcome to DebugFinder!</h1>
+    </div>
+
+    <!---
+    <div class="quick_how_to">
+        <h2>Steps to your success ...</h2>
+        <ul>
+            <li>Sign up at debugfinder.com</li>
+            <li>Create a new helper</li>
+            <li>Paste in your code</li>
+            <li>Let DebugFinder do all the hard work</li>
+            <li>Get and see the suggestions and errors in your code</li>
+            <li>Enjoy :)</li>
+        </ul>
+    </div>
+-->
+
+<!--Boostrap Embedded Below-->
+
+
+<!--Boostrap Embedded Below-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!--Boostrap Embedded Below-->
+
+
+</body>
+{% endblock %}
+
+
+</html>

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'FluxRegular';
+  src: url('fonts/FLUXRG.eot');
+  src: url('fonts/FLUXRG.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FLUXRG.woff2') format('woff2'),
+       url('fonts/FLUXRG.woff') format('woff'),
+       url('fonts/FLUXRG.ttf')  format('truetype'),
+       url('fonts/FLUXRG.svg#FluxRegular') format('svg');
+}
+
+h1 {
+  font-family: 'FluxRegular';
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

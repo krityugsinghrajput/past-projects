@@ -1,0 +1,10 @@
+/** Font imported from google fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/** Basic Color Template for this web app **/
+/** Green #58D68D */
+/** Blue #3498DB */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}

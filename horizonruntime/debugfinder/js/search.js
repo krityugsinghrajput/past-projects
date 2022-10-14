@@ -1,0 +1,2 @@
+var example = ""
+var array = [];
